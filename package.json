@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "indent-string": "^4.0.0",
+    "nodemon": "^2.0.6",
+    "wordwrapjs": "^4.0.0"
+  }
+}
