@@ -1,0 +1,50 @@
+.asmaulhusna-card {
+  max-width: 400px;
+  min-height: 280px;
+  margin: 40px;
+  display: flex; justify-content: start; flex-direction: column; flex-wrap: wrap;
+  background: #f4faff;
+
+  .mat-card-header {
+    padding: 21px 0 0 5px;
+
+    .mat-card-title {
+      font-size: 20pt;
+      font-family: 'Amiri', sans-serif;
+    }
+
+    .mat-card-subtitle {
+      margin-top: 11px;
+      font-family: sans-serif;
+    }
+  }
+
+  .mat-card-content {
+    padding: 11px 21px 0 21px;
+
+    .transliteration {
+      // color: #aaa;
+      // font-style: italic;
+      font-size: 12pt;
+      font-family: 'Bad Script', cursive;
+    }
+
+
+    .meaning-label {
+      color: #aaa;
+      font-style: italic;
+      font-family: sans-serif;
+    }
+
+    .meaning {
+      margin-top: 7px;
+      font-size: 11pt;
+      font-family: 'Bad Script', cursive;
+    }
+  }
+
+  .mat-card-actions {
+    margin: auto 0 0;
+  }
+
+}
