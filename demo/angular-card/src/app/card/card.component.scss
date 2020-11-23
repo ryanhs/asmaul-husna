@@ -11,11 +11,19 @@
     .mat-card-title {
       font-size: 20pt;
       font-family: 'Amiri', sans-serif;
+
+      .index {
+        font-size: 11pt;
+      }
     }
 
     .mat-card-subtitle {
       margin-top: 11px;
       font-family: sans-serif;
+
+      .index {
+        font-size: 9pt;
+      }
     }
   }
 

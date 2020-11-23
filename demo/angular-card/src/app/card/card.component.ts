@@ -9,6 +9,7 @@ import { random } from './../../../../../db/index';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
+  index: Number;
   arabic: String;
   latin: String;
   transliteration: String;
@@ -26,6 +27,7 @@ export class CardComponent implements OnInit {
   next(): void {
     const item = random();
 
+    this.index = item.index;
     this.arabic = item.arabic;
     this.latin = item.latin;
     this.transliteration = item.transliteration;

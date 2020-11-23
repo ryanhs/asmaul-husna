@@ -8,6 +8,6 @@ module.exports = {
 
   random: (locale = 'en') => {
     const index = module.exports.getRandomIndex();
-    return locales[locale][index];
+    return { index, ...locales[locale][index] };
   }
 }

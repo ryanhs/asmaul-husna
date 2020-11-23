@@ -794,6 +794,7 @@ class CardComponent {
     }
     next() {
         const item = Object(_db_index__WEBPACK_IMPORTED_MODULE_1__["random"])();
+        this.index = item.index;
         this.arabic = item.arabic;
         this.latin = item.latin;
         this.transliteration = item.transliteration;
@@ -802,44 +803,49 @@ class CardComponent {
     }
 }
 CardComponent.ɵfac = function CardComponent_Factory(t) { return new (t || CardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"])); };
-CardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CardComponent, selectors: [["app-card"]], decls: 16, vars: 4, consts: [[1, "asmaulhusna-card"], [1, "transliteration"], [1, "meaning-label"], [1, "meaning"], ["align", "end"], ["mat-raised-button", "", 3, "click"]], template: function CardComponent_Template(rf, ctx) { if (rf & 1) {
+CardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CardComponent, selectors: [["app-card"]], decls: 18, vars: 5, consts: [[1, "asmaulhusna-card"], [1, "index"], [1, "transliteration"], [1, "meaning-label"], [1, "meaning"], ["align", "end"], ["mat-raised-button", "", 3, "click"]], template: function CardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-title");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-subtitle");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-card-content");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "strong", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "meaning:");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-card-subtitle");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "mat-card-actions", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CardComponent_Template_button_click_14_listener() { return ctx.next(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "next");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-card-content");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "strong", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "meaning:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "mat-card-actions", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CardComponent_Template_button_click_16_listener() { return ctx.next(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "next");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.arabic);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("(", ctx.index, ")");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("\u00A0", ctx.arabic, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.latin);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.transliteration);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.meaning, " ");
-    } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardSubtitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardContent"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardActions"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButton"]], styles: [".asmaulhusna-card[_ngcontent-%COMP%] {\n  max-width: 400px;\n  min-height: 280px;\n  margin: 40px;\n  display: flex;\n  justify-content: flex-start;\n  flex-direction: column;\n  flex-wrap: wrap;\n  background: #f4faff;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%] {\n  padding: 21px 0 0 5px;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  font-size: 20pt;\n  font-family: \"Amiri\", sans-serif;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%]   .mat-card-subtitle[_ngcontent-%COMP%] {\n  margin-top: 11px;\n  font-family: sans-serif;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%] {\n  padding: 11px 21px 0 21px;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%]   .transliteration[_ngcontent-%COMP%] {\n  font-size: 12pt;\n  font-family: \"Bad Script\", cursive;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%]   .meaning-label[_ngcontent-%COMP%] {\n  color: #aaa;\n  font-style: italic;\n  font-family: sans-serif;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%]   .meaning[_ngcontent-%COMP%] {\n  margin-top: 7px;\n  font-size: 11pt;\n  font-family: \"Bad Script\", cursive;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-actions[_ngcontent-%COMP%] {\n  margin: auto 0 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2NhcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFBZSwyQkFBQTtFQUE2QixzQkFBQTtFQUF3QixlQUFBO0VBQ3BFLG1CQUFBO0FBSUY7QUFGRTtFQUNFLHFCQUFBO0FBSUo7QUFGSTtFQUNFLGVBQUE7RUFDQSxnQ0FBQTtBQUlOO0FBREk7RUFDRSxnQkFBQTtFQUNBLHVCQUFBO0FBR047QUFDRTtFQUNFLHlCQUFBO0FBQ0o7QUFDSTtFQUdFLGVBQUE7RUFDQSxrQ0FBQTtBQUROO0FBS0k7RUFDRSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSx1QkFBQTtBQUhOO0FBTUk7RUFDRSxlQUFBO0VBQ0EsZUFBQTtFQUNBLGtDQUFBO0FBSk47QUFRRTtFQUNFLGdCQUFBO0FBTkoiLCJmaWxlIjoiY2FyZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hc21hdWxodXNuYS1jYXJkIHtcbiAgbWF4LXdpZHRoOiA0MDBweDtcbiAgbWluLWhlaWdodDogMjgwcHg7XG4gIG1hcmdpbjogNDBweDtcbiAgZGlzcGxheTogZmxleDsganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0OyBmbGV4LWRpcmVjdGlvbjogY29sdW1uOyBmbGV4LXdyYXA6IHdyYXA7XG4gIGJhY2tncm91bmQ6ICNmNGZhZmY7XG5cbiAgLm1hdC1jYXJkLWhlYWRlciB7XG4gICAgcGFkZGluZzogMjFweCAwIDAgNXB4O1xuXG4gICAgLm1hdC1jYXJkLXRpdGxlIHtcbiAgICAgIGZvbnQtc2l6ZTogMjBwdDtcbiAgICAgIGZvbnQtZmFtaWx5OiAnQW1pcmknLCBzYW5zLXNlcmlmO1xuICAgIH1cblxuICAgIC5tYXQtY2FyZC1zdWJ0aXRsZSB7XG4gICAgICBtYXJnaW4tdG9wOiAxMXB4O1xuICAgICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgfVxuICB9XG5cbiAgLm1hdC1jYXJkLWNvbnRlbnQge1xuICAgIHBhZGRpbmc6IDExcHggMjFweCAwIDIxcHg7XG5cbiAgICAudHJhbnNsaXRlcmF0aW9uIHtcbiAgICAgIC8vIGNvbG9yOiAjYWFhO1xuICAgICAgLy8gZm9udC1zdHlsZTogaXRhbGljO1xuICAgICAgZm9udC1zaXplOiAxMnB0O1xuICAgICAgZm9udC1mYW1pbHk6ICdCYWQgU2NyaXB0JywgY3Vyc2l2ZTtcbiAgICB9XG5cblxuICAgIC5tZWFuaW5nLWxhYmVsIHtcbiAgICAgIGNvbG9yOiAjYWFhO1xuICAgICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgfVxuXG4gICAgLm1lYW5pbmcge1xuICAgICAgbWFyZ2luLXRvcDogN3B4O1xuICAgICAgZm9udC1zaXplOiAxMXB0O1xuICAgICAgZm9udC1mYW1pbHk6ICdCYWQgU2NyaXB0JywgY3Vyc2l2ZTtcbiAgICB9XG4gIH1cblxuICAubWF0LWNhcmQtYWN0aW9ucyB7XG4gICAgbWFyZ2luOiBhdXRvIDAgMDtcbiAgfVxuXG59XG4iXX0= */"] });
+    } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardSubtitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardContent"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardActions"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButton"]], styles: [".asmaulhusna-card[_ngcontent-%COMP%] {\n  max-width: 400px;\n  min-height: 280px;\n  margin: 40px;\n  display: flex;\n  justify-content: flex-start;\n  flex-direction: column;\n  flex-wrap: wrap;\n  background: #f4faff;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%] {\n  padding: 21px 0 0 5px;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%] {\n  font-size: 20pt;\n  font-family: \"Amiri\", sans-serif;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%]   .mat-card-title[_ngcontent-%COMP%]   .index[_ngcontent-%COMP%] {\n  font-size: 11pt;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%]   .mat-card-subtitle[_ngcontent-%COMP%] {\n  margin-top: 11px;\n  font-family: sans-serif;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-header[_ngcontent-%COMP%]   .mat-card-subtitle[_ngcontent-%COMP%]   .index[_ngcontent-%COMP%] {\n  font-size: 9pt;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%] {\n  padding: 11px 21px 0 21px;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%]   .transliteration[_ngcontent-%COMP%] {\n  font-size: 12pt;\n  font-family: \"Bad Script\", cursive;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%]   .meaning-label[_ngcontent-%COMP%] {\n  color: #aaa;\n  font-style: italic;\n  font-family: sans-serif;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-content[_ngcontent-%COMP%]   .meaning[_ngcontent-%COMP%] {\n  margin-top: 7px;\n  font-size: 11pt;\n  font-family: \"Bad Script\", cursive;\n}\n.asmaulhusna-card[_ngcontent-%COMP%]   .mat-card-actions[_ngcontent-%COMP%] {\n  margin: auto 0 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2NhcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFBZSwyQkFBQTtFQUE2QixzQkFBQTtFQUF3QixlQUFBO0VBQ3BFLG1CQUFBO0FBSUY7QUFGRTtFQUNFLHFCQUFBO0FBSUo7QUFGSTtFQUNFLGVBQUE7RUFDQSxnQ0FBQTtBQUlOO0FBRk07RUFDRSxlQUFBO0FBSVI7QUFBSTtFQUNFLGdCQUFBO0VBQ0EsdUJBQUE7QUFFTjtBQUFNO0VBQ0UsY0FBQTtBQUVSO0FBR0U7RUFDRSx5QkFBQTtBQURKO0FBR0k7RUFHRSxlQUFBO0VBQ0Esa0NBQUE7QUFITjtBQU9JO0VBQ0UsV0FBQTtFQUNBLGtCQUFBO0VBQ0EsdUJBQUE7QUFMTjtBQVFJO0VBQ0UsZUFBQTtFQUNBLGVBQUE7RUFDQSxrQ0FBQTtBQU5OO0FBVUU7RUFDRSxnQkFBQTtBQVJKIiwiZmlsZSI6ImNhcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXNtYXVsaHVzbmEtY2FyZCB7XG4gIG1heC13aWR0aDogNDAwcHg7XG4gIG1pbi1oZWlnaHQ6IDI4MHB4O1xuICBtYXJnaW46IDQwcHg7XG4gIGRpc3BsYXk6IGZsZXg7IGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDsgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgZmxleC13cmFwOiB3cmFwO1xuICBiYWNrZ3JvdW5kOiAjZjRmYWZmO1xuXG4gIC5tYXQtY2FyZC1oZWFkZXIge1xuICAgIHBhZGRpbmc6IDIxcHggMCAwIDVweDtcblxuICAgIC5tYXQtY2FyZC10aXRsZSB7XG4gICAgICBmb250LXNpemU6IDIwcHQ7XG4gICAgICBmb250LWZhbWlseTogJ0FtaXJpJywgc2Fucy1zZXJpZjtcblxuICAgICAgLmluZGV4IHtcbiAgICAgICAgZm9udC1zaXplOiAxMXB0O1xuICAgICAgfVxuICAgIH1cblxuICAgIC5tYXQtY2FyZC1zdWJ0aXRsZSB7XG4gICAgICBtYXJnaW4tdG9wOiAxMXB4O1xuICAgICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG5cbiAgICAgIC5pbmRleCB7XG4gICAgICAgIGZvbnQtc2l6ZTogOXB0O1xuICAgICAgfVxuICAgIH1cbiAgfVxuXG4gIC5tYXQtY2FyZC1jb250ZW50IHtcbiAgICBwYWRkaW5nOiAxMXB4IDIxcHggMCAyMXB4O1xuXG4gICAgLnRyYW5zbGl0ZXJhdGlvbiB7XG4gICAgICAvLyBjb2xvcjogI2FhYTtcbiAgICAgIC8vIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICAgIGZvbnQtc2l6ZTogMTJwdDtcbiAgICAgIGZvbnQtZmFtaWx5OiAnQmFkIFNjcmlwdCcsIGN1cnNpdmU7XG4gICAgfVxuXG5cbiAgICAubWVhbmluZy1sYWJlbCB7XG4gICAgICBjb2xvcjogI2FhYTtcbiAgICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICAgIH1cblxuICAgIC5tZWFuaW5nIHtcbiAgICAgIG1hcmdpbi10b3A6IDdweDtcbiAgICAgIGZvbnQtc2l6ZTogMTFwdDtcbiAgICAgIGZvbnQtZmFtaWx5OiAnQmFkIFNjcmlwdCcsIGN1cnNpdmU7XG4gICAgfVxuICB9XG5cbiAgLm1hdC1jYXJkLWFjdGlvbnMge1xuICAgIG1hcmdpbjogYXV0byAwIDA7XG4gIH1cblxufVxuIl19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CardComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -869,7 +875,7 @@ module.exports = {
 
   random: (locale = 'en') => {
     const index = module.exports.getRandomIndex();
-    return locales[locale][index];
+    return { index, ...locales[locale][index] };
   }
 }
 
