@@ -3,6 +3,7 @@
     <mat-card-title>{{arabic}}</mat-card-title>
     <mat-card-subtitle>{{latin}}</mat-card-subtitle>
   </mat-card-header>
+
   <mat-card-content>
     <p class="transliteration">{{transliteration}}</p>
 
@@ -10,8 +11,10 @@
     <p class="meaning">
       {{meaning}}
     </p>
+
   </mat-card-content>
+
   <mat-card-actions align="end">
-    <button mat-raised-button color="accent" (click)="next()">next</button>
+    <button mat-raised-button (click)="next()">next</button>
   </mat-card-actions>
 </mat-card>
