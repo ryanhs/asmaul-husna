@@ -3,7 +3,7 @@
   min-height: 280px;
   margin: 40px;
   display: flex; justify-content: flex-start; flex-direction: column; flex-wrap: wrap;
-  background: #f4faff;
+  background: #fffce4;
 
   .mat-card-header {
     padding: 21px 0 0 5px;
@@ -22,7 +22,7 @@
       font-family: sans-serif;
 
       .index {
-        font-size: 9pt;
+        // font-size: 9pt;
       }
     }
   }
@@ -31,7 +31,7 @@
     padding: 11px 21px 0 21px;
 
     .transliteration {
-      // color: #aaa;
+      color: #3b9eff;
       // font-style: italic;
       font-size: 12pt;
       font-family: 'Bad Script', cursive;
