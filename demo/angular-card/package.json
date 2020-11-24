@@ -2,7 +2,7 @@
   "name": "angular-card",
   "version": "0.0.0",
   "scripts": {
-    "build": "ng build --output-path ../../docs --base-href /asmaul-husna/",
+    "build": "ng build --prod --output-path ../../docs --base-href /asmaul-husna/",
     "dev": "ng serve"
   },
   "private": true,
