@@ -1,6 +1,7 @@
 
 const locales = {
-  en: require('./en')
+  en: require('./en'),
+  id: require('./id'),
 };
 
 module.exports = {

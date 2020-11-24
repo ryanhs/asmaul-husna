@@ -49,7 +49,7 @@ export class CardComponent implements OnInit {
   }
 
   renderItem(index): void {
-    const item = getItem(index, 'en');
+    const item = getItem(index, 'id');
 
     this.index = item.index;
     this.arabic = item.arabic;
