@@ -10,14 +10,15 @@ module.exports = [
   {
     "arabic": "الرَّحِيمُ",
     "latin": "Ar-Raheem",
-    "transliteration": "The Merciful",
-    "meaning": "He who acts with extreme kindness",
+    "transliteration": "Yang Maha Penyayang",
+    "meaning": `Sungguh Allah lebih penyayang terhadap hamba-hamba-Nya daripada seorang ibu terhadap anak bayinya" (HR Bukhari dan Muslim)
+    \nDan Dia Yang Memiliki Sifat Penyayang kepada orang-orang yang beriman." (QS Al Ahzab 33:43)`,
   },
   {
     "arabic": "الْمَلِكُ",
     "latin": "Al-Malik",
-    "transliteration": "The Eternal Lord",
-    "meaning": "The Sovereign Lord, The One with the complete Dominion, the One Whose Dominion is clear from imperfection",
+    "transliteration": "Yang Maha Merajai atau Memerintah",
+    "meaning": "Allah SWT berkuasa atas segala sesuatu yang baik dalam hal untuk memerintah dan melarang. Al Malik juga mempunyai makna sesuatu. Segala sesuatu hanya butuh kepada Allah SWT sedangkan untuk Allah tidak akan butuh segala sesuatu.",
   },
   {
     "arabic": "الْقُدُّوسُ",

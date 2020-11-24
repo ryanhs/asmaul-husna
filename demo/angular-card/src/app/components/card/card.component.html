@@ -9,9 +9,7 @@
 
     <!-- <strong class="meaning-label">meaning:</strong> -->
 
-    <p class="meaning">
-      {{meaning}}
-    </p>
+    <p class="meaning" [innerHTML]="meaning | nl2br"></p>
 
   </mat-card-content>
 

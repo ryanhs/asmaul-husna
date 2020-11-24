@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { Nl2BrPipeModule } from 'nl2br-pipe';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,9 +21,15 @@ import { CardComponent } from '@components/card/card.component';
     CardComponent
   ],
   imports: [
+    // ng
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
+    // pipe
+    Nl2BrPipeModule,
+
+    // material
     MatCardModule,
     MatButtonModule,
     MatIconModule,
