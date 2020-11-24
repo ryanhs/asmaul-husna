@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+
+import { UseLayoutService } from '@services/use-layout.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-card';
+  title = 'asmaulhusna card';
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    public useLayout: UseLayoutService,
+  ) {}
 }

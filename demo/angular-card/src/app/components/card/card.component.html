@@ -1,0 +1,27 @@
+<mat-card [ngClass]="{'asmaulhusna-card': true, 'asmaulhusna-card-with-layout': this.useLayout.show}">
+  <mat-card-header>
+    <mat-card-title>{{arabic}}</mat-card-title>
+    <mat-card-subtitle><span class="index">({{index}})</span>&nbsp;&nbsp;{{latin}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p class="transliteration">{{transliteration}}</p>
+
+    <strong class="meaning-label">meaning:</strong>
+    <p class="meaning">
+      {{meaning}}
+    </p>
+
+  </mat-card-content>
+
+  <mat-card-actions align="end" *ngIf="this.useLayout.show">
+    <button mat-mini-fab color="primary" (click)="random()" aria-label="Example icon button with a plus one icon">
+      <mat-icon>autorenew</mat-icon>
+    </button>
+    &nbsp;
+    &nbsp;
+    <button mat-mini-fab (click)="next()" aria-label="Example icon button with a plus one icon">
+      <mat-icon>forward</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
